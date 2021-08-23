@@ -1,0 +1,12 @@
+{
+  "root": true,
+  "extends": "awzzm-vue/v3",
+  "rules": {
+    "unicorn/prevent-abbreviations": ["warn", {
+      "replacements": {
+        "i": false,
+        "props": false
+      }
+    }]
+  }
+}
