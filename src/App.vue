@@ -73,6 +73,12 @@
   import { services } from "./assets/services.js"
   import ServiceBox from "./components/ServiceBox.vue"
 
+  const alphabeticallySortedServices = services.sort((a, b) => {
+    if (a.name < b.name) return -1
+    if (a.name > b.name) return 1
+    return 0
+  })
+
   export default {
     name: "App",
     components: { ServiceBox, SearchField },
@@ -84,7 +90,7 @@
         threshold: 0.5
       })
 
-      const result = computed(() => query.value === "" ? services : fuse.search(query.value).map(r => r.item))
+      const result = computed(() => query.value === "" ? alphabeticallySortedServices : fuse.search(query.value).map(r => r.item))
 
       return {
         query,
