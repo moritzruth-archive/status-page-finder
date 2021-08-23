@@ -27,7 +27,7 @@
         :icon="service.icon"
       />
     </div>
-    <div class="text-gray-500 text-lg text-center absolute w-full top-50 transition duration-200" :class="result.length === 0 ? 'opacity-100' : 'opacity-0'">
+    <div class="text-gray-500 text-lg text-center absolute w-full top-50 transition duration-200" :class="result.length === 0 ? 'opacity-100' : 'opacity-0 pointer-events-none'">
       <div>
         No results found.
       </div>
