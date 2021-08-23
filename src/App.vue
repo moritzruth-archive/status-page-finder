@@ -1,5 +1,5 @@
 <template>
-  <header class="flex justify-between items-center px-4 py-5 sm:px-10 sm:py-8 sticky top-0 bg-white bg-opacity-20" :class="$style.bar">
+  <header class="flex justify-between items-center px-4 py-5 sm:px-10 sm:py-8 sticky top-0 bg-white bg-opacity-40 z-100 border-bottom-1px border-gray-200" :class="$style.bar">
     <div class="font-bold sm:text-xl">
       Status Page Finder
     </div>
@@ -40,7 +40,7 @@
       </div>
     </div>
   </main>
-  <footer class="flex flex-col space-y-2 justify-center items-center py-4 px-2 text-gray-500 transition opacity-50 hover:opacity-100 focus-within:opacity-100">
+  <footer class="flex flex-col space-y-2 justify-center items-center mt-4 py-4 px-2 text-gray-500 transition opacity-50 hover:opacity-100 focus-within:opacity-100">
     <a href="https://moritzruth.de" :class="$style.link">
       Created with ❤️ by Moritz Ruth
     </a>
@@ -56,7 +56,7 @@
   }
 
   .bar {
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
   }
 
   .grid {

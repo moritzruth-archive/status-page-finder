@@ -14,7 +14,9 @@ export default defineConfig({
       blue: colors.indigo,
       gray: colors.gray,
       dark: colors.dark,
-      light: colors.light
+      light: colors.light,
+      white: colors.white,
+      black: colors.black
     },
     extend: {
       screens: {
