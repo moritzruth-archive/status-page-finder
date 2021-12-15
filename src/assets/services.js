@@ -17,6 +17,7 @@ import SpotifyIcon from "virtual:vite-icons/simple-icons/spotify"
 import RedditIcon from "virtual:vite-icons/simple-icons/reddit"
 import SignalIcon from "virtual:vite-icons/simple-icons/signal"
 import MicrosoftIcon from "virtual:vite-icons/simple-icons/microsoft"
+import NPMIcon from "virtual:vite-icons/simple-icons/npm"
 
 export const services = [
   {
@@ -132,5 +133,11 @@ export const services = [
     url: "https://admin.microsoft.com/servicestatus",
     icon: MicrosoftIcon,
     color: "#f65314"
+  },
+  {
+    name: "npm",
+    url: "https://status.npmjs.org/",
+    icon: NPMIcon,
+    color: "#cb3837"
   }
 ]
